@@ -13,10 +13,39 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Program">
+      <UniqueIdentifier>{6cbe6c02-8f46-49af-b1b6-0aaee4b63eb4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="system.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="program_init.c">
+      <Filter>Source Files\Program</Filter>
+    </ClCompile>
+    <ClCompile Include="program_loop.c">
+      <Filter>Source Files\Program</Filter>
+    </ClCompile>
+    <ClCompile Include="program_quit.c">
+      <Filter>Source Files\Program</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="system.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="program_main.h">
+      <Filter>Source Files\Program</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
