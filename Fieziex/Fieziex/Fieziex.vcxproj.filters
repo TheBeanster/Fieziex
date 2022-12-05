@@ -16,17 +16,20 @@
     <Filter Include="Source Files\Program">
       <UniqueIdentifier>{6cbe6c02-8f46-49af-b1b6-0aaee4b63eb4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\System">
+      <UniqueIdentifier>{46577ef9-db5e-438a-a8e3-e79edcdd0e86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{5da60ac2-5e4a-4835-baae-b031638275d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Physics">
+      <UniqueIdentifier>{2d5d181d-c738-4927-bc65-c67c2fe5202d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utility">
+      <UniqueIdentifier>{7bfd541d-0322-4487-9c1f-a6554763e591}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="system.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="input.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="program_init.c">
       <Filter>Source Files\Program</Filter>
     </ClCompile>
@@ -36,16 +39,61 @@
     <ClCompile Include="program_quit.c">
       <Filter>Source Files\Program</Filter>
     </ClCompile>
+    <ClCompile Include="input.c">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="system.c">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics.c">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="object.c">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="vector.c">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="physics.c">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="random.c">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="chrono.c">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="system.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="input.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="program_main.h">
       <Filter>Source Files\Program</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>Source Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="system.h">
+      <Filter>Source Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="object.h">
+      <Filter>Source Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.h">
+      <Filter>Source Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="physics.h">
+      <Filter>Source Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="random.h">
+      <Filter>Source Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="chrono.h">
+      <Filter>Source Files\Utility</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -17,17 +17,11 @@ extern int framecount;
 
 // Initialize system setup
 // \returns 1 on success, 0 on failure
-int system_init();
+int SystemInit();
 
+void UpdateWindow();
 
+void SystemQuit();
 
-void update_window();
-
-
-
-void system_quit();
-
-
-
-void show_errorbox(const char* title, const char* message);
-void show_sdlerrorbox();
+void ShowErrorbox(const char* title, const char* message);
+void ShowSDLErrorbox();

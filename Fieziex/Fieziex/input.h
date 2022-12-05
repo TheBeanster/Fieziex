@@ -7,9 +7,9 @@
 typedef enum
 {
 	SYSTEMPINPUT_EXIT = 1U << 0,
-} systeminput_t;
+} SystemInput;
 
-extern systeminput_t systeminputs;
+extern SystemInput systeminputs;
 
 extern char* keyboardinputs;
 
@@ -26,11 +26,11 @@ typedef enum
 	MOUSEBUTTONSTATE_LEFT_DOWN = 1U << 0,
 	MOUSEBUTTONSTATE_RIGHT_DOWN = 1U << 1,
 
-} bean_mouse_button_state_t;
+} MouseButtonsState;
 
 extern int mouse_button_states;
 
 
 
-void update_inputs();
+void UpdateInputs();
 

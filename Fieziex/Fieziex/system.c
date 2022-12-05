@@ -20,12 +20,12 @@ int framecount = 0;
 
 
 
-int system_init()
+int SystemInit()
 {
 
 	if (SDL_Init(SDL_INIT_EVERYTHING) < 0)
 	{
-		show_sdlerrorbox();
+		ShowSDLErrorbox();
 		return 0;
 	}
 
@@ -33,7 +33,7 @@ int system_init()
 
 	// Open the main window
 	main_window = SDL_CreateWindow(
-		"Gravitahs",
+		"Fieziex",
 		SDL_WINDOWPOS_UNDEFINED,
 		SDL_WINDOWPOS_UNDEFINED,
 		640,
@@ -44,7 +44,7 @@ int system_init()
 	// Check if it failed
 	if (!main_window)
 	{
-		show_sdlerrorbox();
+		ShowSDLErrorbox();
 		return 0;
 	}
 
@@ -64,7 +64,7 @@ int system_init()
 	// Check if it failed
 	if (!main_renderer)
 	{
-		show_sdlerrorbox();
+		ShowSDLErrorbox();
 		return 0;
 	}
 
@@ -84,7 +84,7 @@ int system_init()
 	// Check if it failed
 	if (!main_texture)
 	{
-		show_sdlerrorbox();
+		ShowSDLErrorbox();
 		return 0;
 	}
 
@@ -107,7 +107,7 @@ int system_init()
 
 
 
-void update_window()
+void UpdateWindow()
 {
 	SDL_SetRenderTarget(main_renderer, NULL);
 	SDL_RenderCopy(main_renderer, main_texture, NULL, NULL);
@@ -118,7 +118,7 @@ void update_window()
 
 
 
-void system_quit()
+void SystemQuit()
 {
 	SDL_DestroyTexture(main_texture);
 	SDL_DestroyRenderer(main_renderer);
@@ -131,7 +131,7 @@ void system_quit()
 
 
 
-void show_errorbox(const char* title, const char* message)
+void ShowErrorbox(const char* title, const char* message)
 {
 	SDL_ShowSimpleMessageBox(
 		SDL_MESSAGEBOX_ERROR,
@@ -140,7 +140,7 @@ void show_errorbox(const char* title, const char* message)
 		NULL);
 }
 
-void show_sdlerrorbox()
+void ShowSDLErrorbox()
 {
 	SDL_ShowSimpleMessageBox(
 		SDL_MESSAGEBOX_ERROR,

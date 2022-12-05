@@ -12,29 +12,29 @@ int main(
 	char**	argv
 )
 {
-	if (!system_init()) return 1;
+	if (!SystemInit()) return 1;
 
-	if (!program_init(argc, argv)) return 1;
+	if (!ProgramInit(argc, argv)) return 1;
 
 
 
 	while (!(systeminputs & SYSTEMPINPUT_EXIT))
 	{
 
-		update_inputs();
+		UpdateInputs();
 
-		program_loop();
+		ProgramLoop();
 
-		update_window();
+		UpdateWindow();
 
 		framecount++;
 	}
 
 
 
-	program_quit();
+	ProgramQuit();
 
-	system_quit();
+	SystemQuit();
 
 	return 0;
 }

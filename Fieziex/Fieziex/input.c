@@ -4,7 +4,7 @@
 
 
 
-systeminput_t systeminputs = 0;
+SystemInput systeminputs = 0;
 
 char* keyboardinputs = NULL;
 
@@ -20,7 +20,7 @@ int mouse_button_states = 0;
 
 
 
-void update_inputs()
+void UpdateInputs()
 {
 	SDL_Event e;
 

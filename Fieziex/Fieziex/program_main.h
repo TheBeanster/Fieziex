@@ -2,8 +2,8 @@
 
 
 
-int program_init(int argc, char** argv);
+int ProgramInit(int argc, char** argv);
 
-void program_loop();
+void ProgramLoop();
 
-void program_quit();
+void ProgramQuit();

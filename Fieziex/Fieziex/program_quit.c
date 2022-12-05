@@ -2,7 +2,7 @@
 
 
 
-void program_quit()
+void ProgramQuit()
 {
 	
 }

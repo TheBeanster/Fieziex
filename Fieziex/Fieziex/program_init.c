@@ -2,11 +2,13 @@
 
 #include "system.h"
 
+#include "object.h"
 
 
-int program_init(int argc, char** argv)
+
+int ProgramInit(int argc, char** argv)
 {
-	// Loading the system json
+	InitObjects();
 
 	return 1;
 }
