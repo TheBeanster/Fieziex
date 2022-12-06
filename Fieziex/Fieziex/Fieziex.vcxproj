@@ -151,7 +151,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="chrono.c" />
     <ClCompile Include="graphics.c" />
     <ClCompile Include="input.c" />
     <ClCompile Include="main.c" />
@@ -160,19 +159,18 @@
     <ClCompile Include="program_init.c" />
     <ClCompile Include="program_loop.c" />
     <ClCompile Include="program_quit.c" />
-    <ClCompile Include="random.c" />
     <ClCompile Include="system.c" />
+    <ClCompile Include="utility.c" />
     <ClCompile Include="vector.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="chrono.h" />
     <ClInclude Include="graphics.h" />
     <ClInclude Include="input.h" />
     <ClInclude Include="object.h" />
     <ClInclude Include="physics.h" />
     <ClInclude Include="program_main.h" />
-    <ClInclude Include="random.h" />
     <ClInclude Include="system.h" />
+    <ClInclude Include="utility.h" />
     <ClInclude Include="vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

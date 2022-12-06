@@ -60,10 +60,7 @@
     <ClCompile Include="physics.c">
       <Filter>Source Files\Physics</Filter>
     </ClCompile>
-    <ClCompile Include="random.c">
-      <Filter>Source Files\Utility</Filter>
-    </ClCompile>
-    <ClCompile Include="chrono.c">
+    <ClCompile Include="utility.c">
       <Filter>Source Files\Utility</Filter>
     </ClCompile>
   </ItemGroup>
@@ -89,10 +86,7 @@
     <ClInclude Include="physics.h">
       <Filter>Source Files\Physics</Filter>
     </ClInclude>
-    <ClInclude Include="random.h">
-      <Filter>Source Files\Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="chrono.h">
+    <ClInclude Include="utility.h">
       <Filter>Source Files\Utility</Filter>
     </ClInclude>
   </ItemGroup>
